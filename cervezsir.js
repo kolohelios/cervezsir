@@ -1,3 +1,8 @@
+$(document).ready(function() {
+	displayMinAndMaxColors([0, 44]);
+});
+
+
 $(function () {
 			$("#color").slider( {
 				range: true,
@@ -7,6 +12,26 @@ $(function () {
 				step: 1,
 				change: function(event, ui) {
 					displayMinAndMaxColors(ui.values);
+					}
+			});
+			$("#butogu").slider( {
+				range: true,
+				min: 0.1,
+				max: 2.5,
+				values: [0.8, 1.4],
+				step: 0.1,
+				change: function(event, ui) {
+					$("#butogu-text").text(ui.values);
+					}
+			});
+			$("#strength").slider( {
+				range: true,
+				min: 0.1,
+				max: 2.5,
+				value: 1,
+				step: 0.1,
+				change: function(event, ui) {
+					$("#strength-text").text(ui.value);
 					}
 			});
 });
@@ -66,4 +91,9 @@ function colorToDisplay(srmValue)
 			break;
 	}
 	return color;
+}
+
+function beerStyle(key, value)
+{
+	var beer = {"styleNum": "1A", "styleName": "Lite American Lager", "ibus": "8 - 12", "srm": "2 - 3", "og": "1.028 - 1.040", "fg": "0.998 - 1.008", "abv": "2.8 - 4.2"};
 }

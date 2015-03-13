@@ -10,7 +10,7 @@
 .navbar-default {
     padding: 15px;
     padding-bottom: 0px;
-    background-color: #92AD9D;
+    background-color: #FFCC66;
 }
 
 .jumbotron {
@@ -18,4 +18,10 @@
   margin-right: 50px; 
   padding: 20px;
   background-color: #FFFFFF;
+}
+
+.ui-slider {
+	height: 15px;
+	width: 100%;
+	padding-left: 5px;
 }

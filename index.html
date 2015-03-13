@@ -5,22 +5,58 @@
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all"> 
 	<link rel="stylesheet" href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="cervezsir.css" type="text/css">
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
 	<script src="cervezsir.js" type="text/javascript"></script>
 </head>
 
 <body>
+	 <nav class="navbar navbar-default">
+        <div class="navbar-header">
+      	  <a class="navbar-brand" href="#">Cervezsir</a>
+        </div>
+    </nav>
+    
 	<div class="jumbotron">
-		<div id="color"></div>
-	<p>Color between</p>
-	<table style="width: 33%" align="center"><tr><td id="min-color">1</td><td id="max-color">44</td></tr></table>
+		<div id="matching-styles">
+		<table class="table">
+			<tr>
+				<td>Style #</td>
+				<td>Style Name</td>
+			</tr>
+			<tr>
+				<td>9D.</td>
+				<td>Irish Red Ale</td>
+			</tr>
+		</table>
+		<div class="divider">
+		<div class="row">
+			<div class="col-xs-1 col-md-1">
+				<button>Filter</button>
+			</div>
+			<div class="col-xs-11 col-md-5">
+				<div id="color"></div>
+				<p>Color between <span id="min-color">1</span> and <span id="max-color">44</span></p>
+			</div>
+			<div class="col-xs-1 col-md-1">
+				<button>Filter</button>
+			</div>
+			<div class="col-xs-11 col-md-5">
+				<div id="butogu"></div>
+				<p>BU:GU ratio: <span id="butogu-text">1</span></p>
+			</div>
+			<div class="col-xs-1 col-md-1">
+				<button>Filter</button>
+			</div>
+			<div class="col-xs-11 col-md-5">
+				<div id="strength"></div>
+				<p>Strength in ABV: <span id"strength-text">5%</span></p>
+			</div>
+		</div>
+	</div>
 	<br><br><br><br>
-	<img id="glass" src="pint-glass.png" width="50%" height="85%">
-	</div>
-</tr>
-	</div>
+	<img id="glass" src="pint-glass.png" width="25%" height="25%">
 </body>
 
 
