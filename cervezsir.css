@@ -1,0 +1,21 @@
+/*!
+ * This is CSS that I have written to extend bootstrap.css v3.3.2; originally I had incorporated
+ * the changes directly into bootstrap.css and later learned the error of my ways.
+ */
+
+.body {
+    background-color: #92AD9D !important;
+}
+
+.navbar-default {
+    padding: 15px;
+    padding-bottom: 0px;
+    background-color: #92AD9D;
+}
+
+.jumbotron {
+  margin-left: 50px;
+  margin-right: 50px; 
+  padding: 20px;
+  background-color: #FFFFFF;
+}
