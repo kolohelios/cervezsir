@@ -19,45 +19,71 @@
     </nav>
     
 	<div class="jumbotron">
-		<div id="matching-styles">
-		<table class="table">
-			<tr>
-				<td>Style #</td>
-				<td>Style Name</td>
-			</tr>
-			<tr>
-				<td>9D.</td>
-				<td>Irish Red Ale</td>
-			</tr>
-		</table>
-		<div class="divider">
 		<div class="row">
-			<div class="col-xs-1 col-md-1">
-				<button>Filter</button>
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-5" id="matching-styles">
+				<div class="table-responsive">
+					<table class="table table-striped">
+					<tr>
+						<td width="25%">Style #</td>
+						<td width="75%">Style Name</td>
+					</tr>
+					</table>
+				</div>
 			</div>
-			<div class="col-xs-11 col-md-5">
+			<div class="hidden-xs hidden-sm hidden-md col-lg-5" id="matching-styles2">
+				<div class="table-responsive">
+					<table class="table table-striped">
+					<tr>
+						<td width="25%">Style #</td>
+						<td width="75%">Style Name</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			<div class="hidden-xs col-sm-3 col-md-3 col-lg-2">
+				<img id="glass" class="img-responsive" src="pint-glass.png">
+			</div>
+		</div>
+		<div class="row controls">
+			<h4>Filters</h4>
+			<hr>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<p class="lead"><input type="checkbox" id="color-checkbox">Color<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Color of beer in SRM."></span></p>	
 				<div id="color"></div>
-				<p>Color between <span id="min-color">1</span> and <span id="max-color">44</span></p>
+				<p>Between <span id="min-color">0</span> and <span id="max-color">40</span> SRM</p>
 			</div>
-			<div class="col-xs-1 col-md-1">
-				<button>Filter</button>
-			</div>
-			<div class="col-xs-11 col-md-5">
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<hr class="visible-xs visible-sm hidden-md hidden-lg">
+				<p class="lead"><span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The ratio of IBUs to starting gravity points (just the 1.XXX value)."></span>BU:GU Ratio</p>
+				<input type="checkbox" id="butogu-checkbox">
+				<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The ratio of IBUs to starting gravity points (just the 1.XXX value)."></span>
 				<div id="butogu"></div>
-				<p>BU:GU ratio: <span id="butogu-text">1</span></p>
+				<p>Between <span id="min-butogu">1</span> and <span id="max-butogu">1</span></p>
 			</div>
-			<div class="col-xs-1 col-md-1">
-				<button>Filter</button>
-			</div>
-			<div class="col-xs-11 col-md-5">
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<hr class="visible-xs visible-sm hidden-md hidden-lg">
+				<input type="checkbox" id="strength-checkbox">
+				&nbsp&nbsp<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Strength of beer in ABV (Alcohol By Volume)."></span>
 				<div id="strength"></div>
-				<p>Strength in ABV: <span id"strength-text">5%</span></p>
+				<p>Strength in ABV: between <span id="min-strength">5</span>% and <span id="max-strength">6</span>%</p>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<hr class="visible-xs visible-sm hidden-md hidden-lg">
+				<input type="checkbox" id="new-checkbox">
+				<div id="new"></div>
+				<p>New: <span id"new-text">10</span></p>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4">
+				<hr class="visible-xs visible-sm hidden-md hidden-lg">
+				<p class="lead">Nationality</p>
+				<input type="checkbox">American
+				<input type="checkbox">Belgian
+				<input type="checkbox">English
+				<input type="checkbox">French
+				<input type="checkbox">German
+				<input type="checkbox">Irish		
 			</div>
 		</div>
 	</div>
-	<br><br><br><br>
-	<img id="glass" src="pint-glass.png" width="25%" height="25%">
 </body>
-
-
 </html>

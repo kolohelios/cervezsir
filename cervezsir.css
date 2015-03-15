@@ -16,12 +16,32 @@
 .jumbotron {
   margin-left: 50px;
   margin-right: 50px; 
-  padding: 20px;
+  padding: 10px;
   background-color: #FFFFFF;
 }
 
-.ui-slider {
-	height: 15px;
-	width: 100%;
-	padding-left: 5px;
+.ui-slider .ui-slider-handle {
+    width: 15px;   
+  	margin-left: -15px;
+}
+
+.row {
+	padding: 15px;
+}
+
+.controls {
+	background-color: #FFAA44;
+}
+
+.glyphicon {
+	margin-left: 10px;
+}
+
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+
+.ui-tooltip {
+    max-width: 400px;
+    z-index: 100;
 }
