@@ -3,9 +3,11 @@
  * the changes directly into bootstrap.css and later learned the error of my ways.
  */
 
+/*
 .body {
     background-color: #92AD9D !important;
 }
+*/
 
 .navbar-default {
     padding: 15px;
@@ -32,6 +34,13 @@
 .controls {
 	background-color: #FFAA44;
 }
+
+.controls > div {
+	outline: 2px solid #FFCC66;
+	margin-top: 0px;
+	padding: 10px;
+	outline-offset: 0px;
+ }
 
 .glyphicon {
 	margin-left: 10px;

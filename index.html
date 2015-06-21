@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all"> 
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all">
 	<link rel="stylesheet" href="http:////maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="cervezsir.css" type="text/css">
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
@@ -17,7 +17,7 @@
       	  <a class="navbar-brand" href="#">Cervezsir</a>
         </div>
     </nav>
-    
+
 	<div class="jumbotron">
 		<div class="row">
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-5" id="matching-styles">
@@ -45,44 +45,50 @@
 			</div>
 		</div>
 		<div class="row controls">
-			<h4>Filters</h4>
+			<h3>Filters</h3>
 			<hr>
+			<!-- color -->
 			<div class="col-xs-12 col-md-6 col-lg-4">
-				<p class="lead"><input type="checkbox" id="color-checkbox">Color<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Color of beer in SRM."></span></p>	
+				<p class="lead"><input type="checkbox" id="color-checkbox">Color<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Color of beer in SRM."></span></p>
 				<div id="color"></div>
-				<p>Between <span id="min-color">0</span> and <span id="max-color">40</span> SRM</p>
+				<p id="color-text">Between <span>0</span> and <span>40</span> SRM</p>
 			</div>
+			<!-- butogu -->
 			<div class="col-xs-12 col-md-6 col-lg-4">
-				<hr class="visible-xs visible-sm hidden-md hidden-lg">
-				<p class="lead"><span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The ratio of IBUs to starting gravity points (just the 1.XXX value)."></span>BU:GU Ratio</p>
-				<input type="checkbox" id="butogu-checkbox">
-				<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The ratio of IBUs to starting gravity points (just the 1.XXX value)."></span>
+				<p class="lead"><input type="checkbox" id="butogu-checkbox">BU:GU Ratio<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The ratio of IBUs to starting gravity points (just the 1.XXX value)."></span></p>
 				<div id="butogu"></div>
-				<p>Between <span id="min-butogu">1</span> and <span id="max-butogu">1</span></p>
+				<p id="butogu-text">Between <span>1</span> and <span>1</span></p>
 			</div>
+			<!-- strength -->
 			<div class="col-xs-12 col-md-6 col-lg-4">
-				<hr class="visible-xs visible-sm hidden-md hidden-lg">
-				<input type="checkbox" id="strength-checkbox">
-				&nbsp&nbsp<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Strength of beer in ABV (Alcohol By Volume)."></span>
+				<p class="lead"><input type="checkbox" id="strength-checkbox">Strength in ABV<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Strength of beer in ABV (Alcohol By Volume)."></span></p>
 				<div id="strength"></div>
-				<p>Strength in ABV: between <span id="min-strength">5</span>% and <span id="max-strength">6</span>%</p>
+				<p id="strength-text">Between <span>5</span>% and <span>6</span>%</p>
 			</div>
+			<!-- OG -->
 			<div class="col-xs-12 col-md-6 col-lg-4">
-				<hr class="visible-xs visible-sm hidden-md hidden-lg">
-				<input type="checkbox" id="new-checkbox">
-				<div id="new"></div>
-				<p>New: <span id"new-text">10</span></p>
+				<p class="lead"><input type="checkbox" id="og-checkbox">Original Gravity<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Starting gravity in specific gravity; a higher number represents a greater amount of dissolved sugars."></span></p>
+				<div id="og"></div>
+				<p id="og-text">Between <span>10</span> and <span>10</span></p>
 			</div>
+			<!-- FG -->
 			<div class="col-xs-12 col-md-6 col-lg-4">
-				<hr class="visible-xs visible-sm hidden-md hidden-lg">
-				<p class="lead">Nationality</p>
-				<input type="checkbox">American
-				<input type="checkbox">Belgian
-				<input type="checkbox">English
-				<input type="checkbox">French
-				<input type="checkbox">German
-				<input type="checkbox">Irish		
+				<p class="lead"><input type="checkbox" id="fg-checkbox">Final Gravity<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="Final gravity in specific gravity; a lower FG is associated with a dryer (less sweet) beer."></span></p>
+				<div id="fg"></div>
+				<p id="fg-text">Between <span>10</span> and <span>10</span></p>
 			</div>
+			<!-- nationality -->
+			<!-- <div class="col-xs-12 col-md-6 col-lg-4">
+				<p class="lead"><input type="checkbox" id="nationality-checkbox">Nationality<span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="The location that this beer style originated."></span></p>
+				<div id="nationality">
+					<input type="radio" name="nationality" id="Am" selected="true">American
+					<input type="radio" name="nationality" id="Be">Belgian
+					<input type="radio" name="nationality" id="En">English
+					<input type="radio" name="nationality" id="Fr">French
+					<input type="radio" name="nationality" id="De">German
+					<input type="radio" name="nationality" id="Ir">Irish
+				</div>
+			</div> -->
 		</div>
 	</div>
 </body>
